@@ -1,0 +1,174 @@
+.lds-circle {
+	display: inline-block;
+	transform: translateZ(1px);
+}
+.lds-circle > div {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	background: #fff;
+	animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+	0%,
+	100% {
+		animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+	}
+	0% {
+		transform: rotateY(0deg);
+	}
+	50% {
+		transform: rotateY(1800deg);
+		animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+	}
+	100% {
+		transform: rotateY(3600deg);
+	}
+}
+
+.___modal,
+.loader {
+	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #1d2330b3;
+	align-items: center;
+	justify-content: center;
+}
+
+.loader {
+	height: 100vh;
+}
+
+.chart_frame {
+	height: 560px;
+	background-color: #1d2330;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 1px solid #282e3b;
+	border-radius: 4px;
+	text-align: right;
+	line-height: 14px;
+	font-size: 12px;
+	font-feature-settings: normal;
+	text-size-adjust: 100%;
+	box-shadow: inset 0 -20px 0 0 #262b38;
+	padding: 1px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+.wrapper {
+	position: relative;
+	top: 0;
+	min-height: 100vh;
+	height: 100% !important;
+	overflow-y: scroll;
+}
+.frame_css {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 14px;
+}
+.inner_frame {
+	height: 540px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+.__banner {
+	background-image: url("../img/comingsoon.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.__h-screen {
+	min-height: 100vh;
+}
+.__banner h1 {
+	font-size: 50px;
+}
+.__alert {
+	right: 0;
+}
+
+.navbar {
+	padding: 10px !important;
+}
+#root {
+	background: #182b5f52;
+}
+.card.card-coin img {
+	width: 150px;
+}
+
+.section-coins h1 {
+	margin-bottom: 50px;
+}
+
+.card.card-coin {
+	border: 2px solid #344675;
+}
+
+.card.card-plain {
+	background: transparent;
+	box-shadow: none;
+}
+
+.card.card-coin .card-header {
+	margin: -100px auto 20px;
+}
+
+.card .card-header:not([data-background-color]) {
+	background-color: initial;
+}
+.card-plain .card-footer,
+.card-plain .card-header {
+	margin-left: 0;
+	margin-right: 0;
+	background-color: initial;
+}
+.card .card-header {
+	padding: 15px 15px 0;
+	border: 0;
+	color: hsla(0, 0%, 100%, 0.8);
+}
+.card-header:first-child {
+	border-radius: 0.2232rem 0.2232rem 0 0;
+}
+.card.card-coin .list-group .list-group-item {
+	background-color: initial;
+	border: none;
+	padding: 0.4rem 1rem;
+}
+
+.list-group-item:first-child {
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+}
+
+.card.card-coin hr {
+	width: 20%;
+	margin-left: 40%;
+}
+
+hr.line-info {
+	background-color: #1d8cf8;
+}
+
+@media (max-width: 575.98px) {
+	.card.card-coin {
+		margin-top: 80px;
+	}
+}
