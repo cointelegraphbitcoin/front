@@ -113,6 +113,9 @@ class AdminNavbar extends React.Component {
 						<Collapse navbar isOpen={this.state.collapseOpen}>
 							<Nav className="mr-auto" navbar>
 								<NavItem className="text-white  d-none d-lg-block d-xl-block">
+									<img src={require("assets/img/logo.jpeg")} width="35"  alt="Logo"/>
+								</NavItem>
+								<NavItem className="text-white  d-none d-lg-block d-xl-block">
 									<NavLink href="/home"> Home </NavLink>
 								</NavItem>
 								<NavItem className="text-white">

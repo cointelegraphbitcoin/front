@@ -19,9 +19,39 @@ import {
   Col,
 } from "reactstrap";
 
+
+
+
+
+
+
+
 export default class Contact extends React.Component {
-  state = {};
+  state = { name: "", email: "", message: "" }
+ 
+
+
   render() {
+
+    const {name , email , message} = this.state
+    const encode = (data) => {
+      return Object.keys(data)
+          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+          .join("&");
+    }    
+
+    const handleSubmit = e => {
+      e.preventDefault()
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", name , email, message })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+  
+      e.preventDefault();
+    };
     return (
       <div className="section section-signup">
         <div
@@ -46,7 +76,10 @@ export default class Contact extends React.Component {
                 <b> Email: support@telegraphBTC.com </b>
               </p>
               <p className="title text-white">
-                <b> Phone: {"+1 (534) 343 345"} </b>
+                <b> Phone: {"+1 (330) 595-4683"} </b>
+              </p>
+              <p className="title text-white">
+                <b> Phone: {"+1 (786) 250-1232"} </b>
               </p>
             </Col>
             <Col className="" lg="6">
@@ -55,7 +88,7 @@ export default class Contact extends React.Component {
                   <CardTitle tag="h4">Contact Us</CardTitle>
                 </CardHeader>
                 <CardBody>
-                  <Form className="form">
+                  <Form className="form" onSubmit={handleSubmit}>
                     <InputGroup
                       className={classnames({
                         "input-group-focus": this.state.fullNameFocus,
@@ -69,6 +102,7 @@ export default class Contact extends React.Component {
                       <Input
                         placeholder="Full Name"
                         type="text"
+                        onInput={(e) => this.setState({ name: e.target.value })}
                         onFocus={(e) => this.setState({ fullNameFocus: true })}
                         onBlur={(e) => this.setState({ fullNameFocus: false })}
                       />
@@ -86,6 +120,7 @@ export default class Contact extends React.Component {
                       <Input
                         placeholder="Email"
                         type="text"
+                        onInput={(e) => this.setState({ email: e.target.value })}
                         onFocus={(e) => this.setState({ emailFocus: true })}
                         onBlur={(e) => this.setState({ emailFocus: false })}
                       />
@@ -103,6 +138,7 @@ export default class Contact extends React.Component {
                       <Input
                         placeholder="Text"
                         type="textarea"
+                        onInput={(e) => this.setState({ message: e.target.value })}
                         onFocus={(e) => this.setState({ textFocus: true })}
                         onBlur={(e) => this.setState({ textFocus: false })}
                       />

@@ -70,6 +70,7 @@ class Notifications extends React.Component {
 				});
 				console.log(response);
 				this.notify("success");
+				this.props.showSpinner(false);
 			} catch (error) {
 				console.log(error.response);
 				this.props.showSpinner(false);

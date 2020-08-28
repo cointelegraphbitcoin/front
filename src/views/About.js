@@ -31,7 +31,7 @@ export default function About() {
 					<Col>
 						<h1> About Us </h1>
 						<h4 className="text-white">
-							Icointraders trading platform is a group of financial and
+						Cointelegraph BTC trading platform is a group of financial and
 							cryptocurrency experts that invest in mining and cryptocurrency
 							trading . We carefully examine the volatility of bitcoin and other
 							cryptocurrencies, invest and make good profit from our
@@ -53,7 +53,7 @@ export default function About() {
 								to achieve it because we respect the customer interests.
 							</li>
 							<li>
-								how can we trust icointraders/How is it reliable? Our goal is to
+								how can we trust Cointelegraph BTC / How is it reliable? Our goal is to
 								create an environment of real trust and partnership. They also
 								have a five year plan,that shows they are here to
 								stay.Impeccable adherence to the Customer interests helps them
@@ -69,7 +69,7 @@ export default function About() {
 					<Col>
 						<h1 id="loanz"> Loans </h1>
 						<h4>
-							Icointraders crypto loan Is a short term Loan , this crypto loan
+							Cointelegraph BTC crypto loan Is a short term Loan , this crypto loan
 							facility is open to all adults whose State of residence allow
 							cryptocurrency trading, therefore, any individual into or
 							interested in cryptocurrency and has government issued ID/License
@@ -83,7 +83,7 @@ export default function About() {
 						<img
 							src={require("assets/img/loans.jpg")}
 							alt=""
-							style={{ width: "100%", minWidth: "300px" }}
+							style={{ width: "100%", minWidth: "250px" }}
 						/>
 					</Col>
 				</Row>
@@ -94,12 +94,12 @@ export default function About() {
 						<Card>
 							<CardBody>
 								<img
-									src="https://blogs-images.forbes.com/lisaearlemcleod/files/2017/03/Lisa-Earle-McLeod_avatar_1489684790-400x400.jpg"
-									alt="loading..."
+										src={require('assets/img/user4.jpeg')} style={{height:'250px'}}
+										alt="loading..."
 								/>
 							</CardBody>
 							<CardFooter>
-								<h4 className="text-center mb-0"> Alex Fegurson </h4>
+									<h4 className="text-center mb-0"> Leon Karl </h4>
 								<p className="text-center mt-0"> Sales Representative </p>
 							</CardFooter>
 						</Card>
@@ -108,13 +108,13 @@ export default function About() {
 						<Card>
 							<CardBody>
 								<img
-									src="https://blogs-images.forbes.com/lisaearlemcleod/files/2017/03/Lisa-Earle-McLeod_avatar_1489684790-400x400.jpg"
+									src={require('assets/img/user1.jpeg')}  style={{height:'250px'}}
 									alt="loading..."
 								/>
 							</CardBody>
 							<CardFooter>
-								<h4 className="text-center mb-0"> Alex Fegurson </h4>
-								<p className="text-center mt-0"> Sales Representative </p>
+								<h4 className="text-center mb-0"> Alexander Porter </h4>
+								<p className="text-center mt-0"> CEO CoinTelegraph BTC </p>
 							</CardFooter>
 						</Card>
 					</Col>
@@ -122,13 +122,13 @@ export default function About() {
 						<Card>
 							<CardBody>
 								<img
-									src="https://blogs-images.forbes.com/lisaearlemcleod/files/2017/03/Lisa-Earle-McLeod_avatar_1489684790-400x400.jpg"
+									src={require('assets/img/user2.jpeg')}  style={{height:'250px'}}
 									alt="loading..."
 								/>
 							</CardBody>
 							<CardFooter>
-								<h4 className="text-center mb-0"> Alex Fegurson </h4>
-								<p className="text-center mt-0"> Sales Representative </p>
+								<h4 className="text-center mb-0"> Tricia Wak. </h4>
+								<p className="text-center mt-0"> Sales representative </p>
 							</CardFooter>
 						</Card>
 					</Col>
@@ -136,12 +136,12 @@ export default function About() {
 						<Card>
 							<CardBody>
 								<img
-									src="https://blogs-images.forbes.com/lisaearlemcleod/files/2017/03/Lisa-Earle-McLeod_avatar_1489684790-400x400.jpg"
-									alt="loading..."
+										src={require('assets/img/user3.jpeg')}  style={{height:'250px'}}
+										alt="loading..."
 								/>
 							</CardBody>
 							<CardFooter>
-								<h4 className="text-center mb-0"> Alex Fegurson </h4>
+								<h4 className="text-center mb-0"> Knueven Roden </h4>
 								<p className="text-center mt-0"> Sales Representative </p>
 							</CardFooter>
 						</Card>
@@ -151,7 +151,7 @@ export default function About() {
 			<Container className="py-5">
 				<h1 className="title text-center"> Send us a Message</h1>
 				<div className="text-center">
-					<Button size="lg"> Send Us a Message </Button>
+					<Button size="lg" href="https://chat.whatsapp.com/GeAN5QtymN3CIag0OXH5oJ"> Send Us a Message </Button>
 				</div>
 			</Container>
 		</>

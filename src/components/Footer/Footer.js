@@ -15,7 +15,7 @@ class Footer extends React.Component {
 					background: "#16161f",
 				}}
 			>
-				© {new Date().getFullYear()} all rights reserved by{" "}
+				All rights reserved by{" "}
 				<a href="/">cointelegraphbitcoin</a>
 			</div>
 		);

@@ -7,7 +7,7 @@ import AdminNavbar from "components/Navbars/AdminNavbar.js";
 // import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import { user as userRoute, admin as adminRoute } from "routes.js";
-import logo from "assets/img/react-logo.png";
+import logo from "assets/img/logo.jpeg";
 import jwt from "jsonwebtoken";
 
 let routes;

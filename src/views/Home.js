@@ -145,7 +145,7 @@ function Home(props) {
 										Join our whatsapp Group for Effective and Easy communication
 										on Trades
 									</p>
-									<Button color="primary" to="/login">
+									<Button color="primary" href="https://chat.whatsapp.com/GeAN5QtymN3CIag0OXH5oJ">
 										Join Now
 									</Button>
 								</div>
@@ -176,7 +176,7 @@ function Home(props) {
 									</Row>
 									<Row>
 										<ListGroup>
-											<ListGroupItem>0.10btc - 5btc</ListGroupItem>
+											<ListGroupItem>0.50btc - 5btc</ListGroupItem>
 											<ListGroupItem>+15% profit </ListGroupItem>
 											<ListGroupItem>24/7 Support</ListGroupItem>
 										</ListGroup>
