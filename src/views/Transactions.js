@@ -60,7 +60,7 @@ function Transactions(props) {
 					<Col md="12">
 						<Card>
 							<CardHeader>
-								<CardTitle tag="h4">Simple Table</CardTitle>
+								<CardTitle tag="h4">All Transactions</CardTitle>
 							</CardHeader>
 							<CardBody>
 								{loading ? (
