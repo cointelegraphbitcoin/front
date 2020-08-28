@@ -27,7 +27,7 @@ import Notify from "react-notification-alert";
 class Signup extends React.Component {
 	state = {
 		email: "",
-		password: "",
+		
 		disabled: false,
 	};
 	render() {
@@ -43,25 +43,24 @@ class Signup extends React.Component {
 			e.preventDefault();
 			this.props.showSpinner(true);
 			this.setState({ disabled: true });
-			const { email, password } = this.state;
+			const { email } = this.state;
 			const data = {
 				email,
-				password,
 			};
 			try {
-				let response = await fetchclient.post("/signin", data);
+				let response = await fetchclient.post("/reset", data);
 				this.refs.notify.notificationAlert({
 					...options,
-					message: "welcome back",
+					message: response.data.data,
 					type: "success",
 				});
 				console.log(response);
-				debugger;
-				localStorage.setItem("auth-token", response.data.data);
-				console.log(response);
-				this.props.Login();
+				// debugger;
+				// localStorage.setItem("auth-token", response.data.data);
+				// console.log(response);
+				// this.props.Login();
 				this.props.showSpinner(false);
-				this.props.history.push("/dashboard/user");
+				// this.props.history.push("/dashboard/user");
 			} catch (error) {
 				this.props.showSpinner(false);
 				console.log(error.response);
@@ -87,19 +86,15 @@ class Signup extends React.Component {
 					<Row className=" justify-content-center align-items-center __h-screen">
 						<Col lg="6" className="d-none d-lg-block d-xl-block">
 							<h3 className="display-3 text-white">
-								Welcome back to the King of crypto Investments
-								<span className="text-white"> over 90% success recorded</span>
+								Forgot Password ?
+								
 							</h3>
-							<div className="btn-wrapper">
-								<Button color="primary" to="signup" tag={Link}>
-									Register Here
-								</Button>
-							</div>
+							
 						</Col>
 						<Col className="" lg="6">
 							<Card className="card-register">
 								<CardHeader>
-									<CardTitle tag="h4">Log In</CardTitle>
+									<CardTitle tag="h4">Forgot Password</CardTitle>
 								</CardHeader>
 								<CardBody>
 									<Form className="form" onSubmit={Submit}>
@@ -123,32 +118,13 @@ class Signup extends React.Component {
 												}
 											/>
 										</InputGroup>
-										<InputGroup
-											className={classnames({
-												"input-group-focus": this.state.passwordFocus,
-											})}
-										>
-											<InputGroupAddon addonType="prepend">
-												<InputGroupText>
-													<i className="tim-icons icon-lock-circle" />
-												</InputGroupText>
-											</InputGroupAddon>
-											<Input
-												placeholder="Password"
-												type="password"
-												onFocus={(e) => this.setState({ passwordFocus: true })}
-												onBlur={(e) => this.setState({ passwordFocus: false })}
-												onInput={(e) =>
-													this.setState({ password: e.target.value })
-												}
-											/>
-										</InputGroup>
+										
 										<Button
 											className="btn-round"
 											color="primary"
 											disabled={
 												this.state.email.length &&
-												this.state.password.length &&
+												
 												!this.state.disabled
 													? false
 													: true
@@ -168,9 +144,7 @@ class Signup extends React.Component {
 							>
 								Register Here
 							</Button>
-							<div><a href="/forgotpassword"> forgot password ? </a> </div>
 						</Col>
-						
 					</Row>
 				</Container>
 			</div>

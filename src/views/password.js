@@ -26,7 +26,6 @@ import Notify from "react-notification-alert";
 
 class Signup extends React.Component {
 	state = {
-		email: "",
 		password: "",
 		disabled: false,
 	};
@@ -37,31 +36,29 @@ class Signup extends React.Component {
 			type: "",
 			autoDismiss: 3,
 			// icon: "icon-simple-remove",
-		};
+        };
+        
+        console.log(this.props.location.search)
 
 		const Submit = async (e) => {
 			e.preventDefault();
 			this.props.showSpinner(true);
 			this.setState({ disabled: true });
-			const { email, password } = this.state;
+			const { password } = this.state;
 			const data = {
-				email,
 				password,
 			};
 			try {
-				let response = await fetchclient.post("/signin", data);
+				let response = await fetchclient.post("/password " + this.props.location.search, data);
 				this.refs.notify.notificationAlert({
 					...options,
 					message: "welcome back",
 					type: "success",
 				});
 				console.log(response);
-				debugger;
-				localStorage.setItem("auth-token", response.data.data);
-				console.log(response);
-				this.props.Login();
+				
 				this.props.showSpinner(false);
-				this.props.history.push("/dashboard/user");
+				
 			} catch (error) {
 				this.props.showSpinner(false);
 				console.log(error.response);
@@ -87,8 +84,7 @@ class Signup extends React.Component {
 					<Row className=" justify-content-center align-items-center __h-screen">
 						<Col lg="6" className="d-none d-lg-block d-xl-block">
 							<h3 className="display-3 text-white">
-								Welcome back to the King of crypto Investments
-								<span className="text-white"> over 90% success recorded</span>
+								Add your new Password
 							</h3>
 							<div className="btn-wrapper">
 								<Button color="primary" to="signup" tag={Link}>
@@ -99,30 +95,11 @@ class Signup extends React.Component {
 						<Col className="" lg="6">
 							<Card className="card-register">
 								<CardHeader>
-									<CardTitle tag="h4">Log In</CardTitle>
+									<CardTitle tag="h4">Change Password</CardTitle>
 								</CardHeader>
 								<CardBody>
 									<Form className="form" onSubmit={Submit}>
-										<InputGroup
-											className={classnames({
-												"input-group-focus": this.state.emailFocus,
-											})}
-										>
-											<InputGroupAddon addonType="prepend">
-												<InputGroupText>
-													<i className="tim-icons icon-email-85" />
-												</InputGroupText>
-											</InputGroupAddon>
-											<Input
-												placeholder="Email"
-												type="text"
-												onFocus={(e) => this.setState({ emailFocus: true })}
-												onBlur={(e) => this.setState({ emailFocus: false })}
-												onInput={(e) =>
-													this.setState({ email: e.target.value })
-												}
-											/>
-										</InputGroup>
+										
 										<InputGroup
 											className={classnames({
 												"input-group-focus": this.state.passwordFocus,
@@ -147,7 +124,7 @@ class Signup extends React.Component {
 											className="btn-round"
 											color="primary"
 											disabled={
-												this.state.email.length &&
+												
 												this.state.password.length &&
 												!this.state.disabled
 													? false

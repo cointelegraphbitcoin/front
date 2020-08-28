@@ -175,6 +175,8 @@ class Tables extends React.Component {
 													<th>City</th>
 													<th>Salary</th>
 													<th className="text-center"> Modify </th>
+													<th className="text-center"> Wallets </th>
+
 												</tr>
 											</thead>
 											<tbody>
@@ -225,6 +227,7 @@ class Tables extends React.Component {
 																	View
 																</Button>
 															</td>
+															<td>{e.wallet}</td>
 														</tr>
 													);
 												})}

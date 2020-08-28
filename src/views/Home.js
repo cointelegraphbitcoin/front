@@ -96,7 +96,7 @@ function Home(props) {
 						className="text-center mx-auto text-white"
 						style={{ maxWidth: "700px" }}
 					>
-						trading platform is a group of financial and cryptocurrency experts
+						Coin Telegraph Bitcoin trading platform is a group of financial and cryptocurrency experts
 						that invest in mining and cryptocurrency trading . We carefully
 						examine the volatility of bitcoin and other cryptocurrencies, invest
 						and make good profit from our investments.

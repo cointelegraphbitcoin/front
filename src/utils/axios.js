@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const fetchclient = axios.create({
-	baseURL: "https://btc-banks.herokuapp.com/",
+	// baseURL: "https://btc-banks.herokuapp.com/",
+	baseURL:'https://cointelegraph.herokuapp.com/'
 });
 
 const authToken = localStorage.getItem("auth-token");

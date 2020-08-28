@@ -11,6 +11,8 @@ import Comingsoon from "views/Comingsoon";
 import About from "views/About";
 import Contact from "views/Contact";
 import Footer from "./components/Footer/Footer";
+import Forgotpassword from './views/forgotpassword';
+import NewPassword from './views/password';
 import "assets/scss/black-dashboard-react.scss";
 import "assets/demo/demo.css";
 import "assets/css/nucleo-icons.css";
@@ -19,6 +21,7 @@ import Store from "./store";
 import { Provider } from "react-redux";
 import { useSelector } from "react-redux";
 import Spinner from "./components/spinner";
+import fetchclient from "utils/axios";
 
 const hist = createBrowserHistory();
 
@@ -35,6 +38,8 @@ const Main = () => {
 	const showSpinner = useSelector((state) => {
 		return state.showSpinner;
 	});
+
+	fetchclient('/')
 	return (
 		<main>
 			<Router history={hist}>
@@ -45,6 +50,8 @@ const Main = () => {
 					<Route path="/about" component={About} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/signin" component={Signin} />
+					<Route path="/forgotpassword" component={Forgotpassword} />
+					<Route path="/new-password" component={NewPassword} />
 					<Route
 						path="/dashboard"
 						render={(props) => <DashboardRoute {...props} />}
