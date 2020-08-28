@@ -49,10 +49,10 @@ class Signup extends React.Component {
 				password,
 			};
 			try {
-				let response = await fetchclient.post("/password " + this.props.location.search, data);
+				let response = await fetchclient.post("password" + this.props.location.search, data);
 				this.refs.notify.notificationAlert({
 					...options,
-					message: "welcome back",
+					message: "welcome back please proceed to login ",
 					type: "success",
 				});
 				console.log(response);
@@ -64,7 +64,7 @@ class Signup extends React.Component {
 				console.log(error.response);
 				this.refs.notify.notificationAlert({
 					...options,
-					message: "incorrect user name and Password",
+					message: "incorrect token or session is expired",
 					type: "danger",
 				});
 			}
@@ -131,7 +131,7 @@ class Signup extends React.Component {
 													: true
 											}
 										>
-											Log In
+											Change
 										</Button>
 									</Form>
 								</CardBody>
