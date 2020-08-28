@@ -9,7 +9,6 @@ import {
   CardHeader,
   CardBody,
   CardTitle,
-  Form,
   Input,
   InputGroupAddon,
   InputGroupText,
@@ -88,7 +87,7 @@ export default class Contact extends React.Component {
                   <CardTitle tag="h4">Contact Us</CardTitle>
                 </CardHeader>
                 <CardBody>
-                  <Form className="form" onSubmit={handleSubmit}>
+                  <form className="form" onSubmit={handleSubmit}>
                     <InputGroup
                       className={classnames({
                         "input-group-focus": this.state.fullNameFocus,
@@ -143,7 +142,7 @@ export default class Contact extends React.Component {
                         onBlur={(e) => this.setState({ textFocus: false })}
                       />
                     </InputGroup>
-                  </Form>
+                  </form>
                   <Button className="" color="primary">
                     Send
                   </Button>
