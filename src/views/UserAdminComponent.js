@@ -93,6 +93,7 @@ const UserProfile = (props) => {
 				window.location.reload()
 			} catch (error) {
 				console.log(error.response);
+				window.alert('failed to add bonus')
 			}finally{
 				props.showSpinner(false);
 			}

@@ -51,7 +51,7 @@ const Main = () => {
 		return state.showSpinner;
 	});
 
-	fetchclient('/')
+	// fetchclient('/')
 	return (
 		<main>
 			<Router history={hist}>
