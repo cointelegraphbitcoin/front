@@ -34,6 +34,18 @@ const DashboardRoute = (props) => {
 	return select ? <AdminLayout {...props} /> : <Redirect to="/signin" />;
 };
 
+const LoggedIn = (props) => {
+	const select = useSelector((state) => {
+		console.log(state);
+
+		return state.authReducer;
+	});
+	return !select ? <>{props.children}</> : <Redirect to="/home" />;
+};
+
+
+
+
 const Main = () => {
 	const showSpinner = useSelector((state) => {
 		return state.showSpinner;
@@ -46,12 +58,29 @@ const Main = () => {
 				<Switch>
 					<Route path="/" exact component={Comingsoon} />
 					<Route path="/home" component={Home} history={hist} />
-					<Route path="/signup" component={SignUp} />
+
+					<Route path="/signup" render={(props) =>
+						<LoggedIn>
+							<SignUp {...props} />
+						</LoggedIn>} >
+					</Route>
 					<Route path="/about" component={About} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/signin" component={Signin} />
-					<Route path="/forgotpassword" component={Forgotpassword} />
-					<Route path="/new-password" component={NewPassword} />
+					<Route path="/signin" render={(props) =>
+						<LoggedIn>
+							<Signin {...props} />
+						</LoggedIn>} >
+					</Route>
+					<Route path="/forgotpassword" render={(props) =>
+						<LoggedIn>
+							<Forgotpassword {...props} />
+						</LoggedIn>}
+					>
+					</Route>
+					<Route path="/new-password" render={(props) => <LoggedIn>
+						<NewPassword {...props} />
+					</LoggedIn> }>
+					</Route>
 					<Route
 						path="/dashboard"
 						render={(props) => <DashboardRoute {...props} />}

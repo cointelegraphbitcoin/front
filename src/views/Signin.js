@@ -61,7 +61,8 @@ class Signup extends React.Component {
 				console.log(response);
 				this.props.Login();
 				this.props.showSpinner(false);
-				this.props.history.push("/dashboard/user");
+				// this.props.history.push("/dashboard/user");
+				window.location.assign('/dashboard/user')
 			} catch (error) {
 				this.props.showSpinner(false);
 				console.log(error.response);

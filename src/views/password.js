@@ -38,7 +38,7 @@ class Signup extends React.Component {
 			// icon: "icon-simple-remove",
         };
         
-        console.log(this.props.location.search)
+        localStorage.clear()
 
 		const Submit = async (e) => {
 			e.preventDefault();

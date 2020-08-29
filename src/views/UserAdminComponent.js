@@ -71,14 +71,33 @@ const UserProfile = (props) => {
 					"/user/" + props.match.params.user
 				);
 				console.log(response);
-				props.Logout();
-				props.history.push("/home");
+				
+				props.history.push("/dashboard/user");
 			} catch (error) {
 				console.log(error.response);
 				props.showSpinner(false);
 			}
 		}
 	};
+
+	const addBonus = async () => {
+		const amount = document.querySelector('#amount').value
+		console.log(amount)
+		let confirm =  window.confirm('do you want to add ' + amount + ' to this user')
+		if(amount > 0 && amount.length && confirm){
+			props.showSpinner(true);
+			try {
+				let res = await fetchclient.patch('/bonus/' + props.match.params.user, {amount})
+				console.log(res)
+				window.alert('done')
+				window.location.reload()
+			} catch (error) {
+				console.log(error.response);
+			}finally{
+				props.showSpinner(false);
+			}
+		}
+	}
 
 	// const filteResponse = (data) => {
 	// 	data.f
@@ -321,6 +340,13 @@ const UserProfile = (props) => {
 										>
 											<Button color="danger">Delete Account</Button>
 										</div>
+									</CardBody>
+								</Card>
+								<Card>
+									<CardBody>
+									<Input type="number" id="amount"> 
+									</Input>
+									<Button color="primary" size="sm" onClick={addBonus}> Add Bonus</Button>
 									</CardBody>
 								</Card>
 							</Col>

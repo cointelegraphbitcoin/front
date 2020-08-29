@@ -214,8 +214,6 @@ class Tables extends React.Component {
 																>
 																	Delete
 																</Button>
-															</td>
-															<td>
 																<Button
 																	size="sm"
 																	onClick={() =>
