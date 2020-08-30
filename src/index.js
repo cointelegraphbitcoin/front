@@ -21,7 +21,6 @@ import Store from "./store";
 import { Provider } from "react-redux";
 import { useSelector } from "react-redux";
 import Spinner from "./components/spinner";
-import fetchclient from "utils/axios";
 
 const hist = createBrowserHistory();
 

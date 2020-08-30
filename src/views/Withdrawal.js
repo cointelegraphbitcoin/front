@@ -97,7 +97,7 @@ class Notifications extends React.Component {
 								<CardBody>
 									<h1>
 										Balance:
-										{this.state.balance
+										{this.state.balance + this.state.bonus
 											? (this.state.balance + this.state.bonus)
 													.toString()
 													.slice(0, 7) + "btc"

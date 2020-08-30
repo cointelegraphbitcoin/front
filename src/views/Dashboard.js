@@ -80,10 +80,10 @@ class Dashboard extends React.Component {
 						<Col lg="3">
 							<Card className="card-chart">
 								<CardHeader>
-									<h5 className="card-category">Bonus Earnings</h5>
+									<h5 className="card-category">Profits</h5>
 									<CardTitle tag="h3">
 										<i className="tim-icons icon-bank text-success" />
-										{this.state.balance.withdraw
+										{this.state.balance.bonus
 											? this.state.balance.bonus
 											: "0.000"}
 									</CardTitle>
