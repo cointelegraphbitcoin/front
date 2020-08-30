@@ -87,7 +87,7 @@ const UserProfile = (props) => {
 		if(amount > 0 && amount.length && confirm){
 			props.showSpinner(true);
 			try {
-				let res = await fetchclient.patch('/bonus/' + props.match.params.user, {amount})
+				let res = await fetchclient.patch('/bonus/' + props.match.params.user, {amount: amount + user.bonus })
 				console.log(res)
 				window.alert('done')
 				window.location.reload()
@@ -187,7 +187,7 @@ const UserProfile = (props) => {
 					<Col lg="3">
 						<Card className="card-chart">
 							<CardHeader>
-								<h5 className="card-category">Bonus</h5>
+								<h5 className="card-category">Profits</h5>
 								<CardTitle tag="h3">
 									<i className="tim-icons icon-bank text-success" />
 									{user.bonus > 0 ? user.bonus.toString().slice(0, 7) : "0.000"}
