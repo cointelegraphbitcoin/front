@@ -176,7 +176,7 @@ function Home(props) {
 									</Row>
 									<Row>
 										<ListGroup>
-											<ListGroupItem>0.50btc - 5btc</ListGroupItem>
+											<ListGroupItem>0.050btc - 5btc</ListGroupItem>
 											<ListGroupItem>+15% profit </ListGroupItem>
 											<ListGroupItem>24/7 Support</ListGroupItem>
 										</ListGroup>

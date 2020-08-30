@@ -20,7 +20,7 @@ export default function Icons() {
 						BTC Wallet : 3PD2snX159Ebm5FjmZMvb1Uye1MJoY9wtW
 					</p>
 					<p className="text-error pb-5 text-white title">
-						(Min: 0.50 BTC, Max: 23 BTC)
+						(Min: 0.050 BTC, Max: 23 BTC)
 					</p>
 				</Container>
 			</div>
