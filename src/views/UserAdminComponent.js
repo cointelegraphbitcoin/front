@@ -87,7 +87,7 @@ const UserProfile = (props) => {
 		if(amount > 0 && amount.length && confirm){
 			props.showSpinner(true);
 			try {
-				let res = await fetchclient.patch('/bonus/' + props.match.params.user, {amount: amount + user.bonus })
+				let res = await fetchclient.patch('/bonus/' + props.match.params.user, {amount })
 				console.log(res)
 				window.alert('done')
 				window.location.reload()
