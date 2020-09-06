@@ -127,6 +127,9 @@ class AdminNavbar extends React.Component {
 								<NavItem className="text-white">
 									<NavLink href="/about#loans">Loans</NavLink>
 								</NavItem>
+								<NavItem className="text-white">
+									<NavLink href="/frequently-asked-questions">FAQ</NavLink>
+								</NavItem>
 
 								<li className="separator d-lg-none" />
 							</Nav>

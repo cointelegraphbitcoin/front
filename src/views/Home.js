@@ -176,9 +176,18 @@ function Home(props) {
 									</Row>
 									<Row>
 										<ListGroup>
-											<ListGroupItem>0.050btc - 5btc</ListGroupItem>
-											<ListGroupItem>+15% profit </ListGroupItem>
-											<ListGroupItem>24/7 Support</ListGroupItem>
+											<ListGroupItem><b>0.050btc - 5btc </b></ListGroupItem>
+											<ListGroupItem><b>+15% profit </b> </ListGroupItem>
+											<ListGroupItem><b> 24/7 Support</b></ListGroupItem>
+                          					<ListGroupItem><b>Plan Validity:</b> 365 Days</ListGroupItem>
+                          					<ListGroupItem><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
+                          					<ListGroupItem><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
+                          					<ListGroupItem><b>Referral Commission:</b> 2.5%</ListGroupItem>
+                        
 										</ListGroup>
 									</Row>
 								</CardBody>
@@ -205,9 +214,17 @@ function Home(props) {
 									</Row>
 									<Row>
 										<ListGroup>
-											<ListGroupItem>5btc - 15btc</ListGroupItem>
-											<ListGroupItem>+30% Profits </ListGroupItem>
-											<ListGroupItem>24/7 Support</ListGroupItem>
+											<ListGroupItem><b>5btc - 15btc </b></ListGroupItem>
+											<ListGroupItem><b>+30% Profits</b> </ListGroupItem>
+											<ListGroupItem><b>24/7 Support</b></ListGroupItem>
+											<ListGroupItem><b>Plan Validity:</b> 365 Days</ListGroupItem>
+                          					<ListGroupItem><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
+                          					<ListGroupItem><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
+                          					<ListGroupItem><b>Referral Commission:</b> 5%</ListGroupItem>
 										</ListGroup>
 									</Row>
 								</CardBody>
@@ -234,9 +251,17 @@ function Home(props) {
 									</Row>
 									<Row>
 										<ListGroup>
-											<ListGroupItem>16btc - 23btc</ListGroupItem>
-											<ListGroupItem>+50% </ListGroupItem>
-											<ListGroupItem>24/7 Support</ListGroupItem>
+											<ListGroupItem><b> 16btc - 23btc </b></ListGroupItem>
+											<ListGroupItem><b>+50%</b> </ListGroupItem>
+											<ListGroupItem><b>24/7 Support</b></ListGroupItem>
+											<ListGroupItem><b>Plan Validity:</b> 365 Days</ListGroupItem>
+                          					<ListGroupItem><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
+                          					<ListGroupItem><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
+                          					<ListGroupItem><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
+                          					<ListGroupItem><b>Referral Commission:</b> 15%</ListGroupItem>
 										</ListGroup>
 									</Row>
 								</CardBody>

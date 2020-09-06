@@ -9,6 +9,7 @@ import Home from "./views/Home";
 import PageNotFound from "./views/PageNotFound";
 import Comingsoon from "views/Comingsoon";
 import About from "views/About";
+import FAQ from "views/Faq";
 import Contact from "views/Contact";
 import Footer from "./components/Footer/Footer";
 import Forgotpassword from './views/forgotpassword';
@@ -57,6 +58,7 @@ const Main = () => {
 				<Switch>
 					<Route path="/" exact component={Comingsoon} />
 					<Route path="/home" component={Home} history={hist} />
+					<Route path="/frequently-asked-questions" component={FAQ} />
 
 					<Route path="/signup" render={(props) =>
 						<LoggedIn>
