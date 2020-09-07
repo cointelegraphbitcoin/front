@@ -169,24 +169,24 @@ function Home(props) {
 								<CardBody>
 									<Row>
 										<Col className="text-center" md="12">
-											<h4 className="text-uppercase">BRONZE COIN</h4>
+											<h4 className="text-uppercase text-primary"> <b> BRONZE COIN </b></h4>
 											<span>Plan</span>
 											<hr className="line-primary" />
 										</Col>
 									</Row>
 									<Row>
 										<ListGroup>
-											<ListGroupItem><b>0.050btc - 5btc </b></ListGroupItem>
-											<ListGroupItem><b>+15% profit </b> </ListGroupItem>
-											<ListGroupItem><b> 24/7 Support</b></ListGroupItem>
-                          					<ListGroupItem><b>Plan Validity:</b> 365 Days</ListGroupItem>
-                          					<ListGroupItem><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
-                          					<ListGroupItem><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
-                          					<ListGroupItem><b>Referral Commission:</b> 2.5%</ListGroupItem>
+											<ListGroupItem className="text-primary"><b>0.050btc - 5btc </b></ListGroupItem>
+											<ListGroupItem className="text-primary"><b>+15% profit </b> </ListGroupItem>
+											<ListGroupItem className="text-primary"><b> 24/7 Support</b></ListGroupItem>
+                          					<ListGroupItem className="text-primary"><b>Plan Validity:</b> 365 Days</ListGroupItem>
+                          					<ListGroupItem className="text-primary"><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
+                          					<ListGroupItem className="text-primary"><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
+                          					<ListGroupItem className="text-primary"><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC</ListGroupItem>
+                          					<ListGroupItem className="text-primary"><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC</ListGroupItem>
+                          					<ListGroupItem className="text-primary"><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
+                          					<ListGroupItem className="text-primary"><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
+                          					<ListGroupItem  className="text-primary"><b>Referral Commission:</b> 2.5%</ListGroupItem>
                         
 										</ListGroup>
 									</Row>
@@ -207,24 +207,24 @@ function Home(props) {
 								<CardBody>
 									<Row>
 										<Col className="text-center" md="12">
-											<h4 className="text-uppercase">SILVER COIN</h4>
+											<h4 className="text-uppercase text-success"> <b>SILVER COIN</b></h4>
 											<span>Plan</span>
 											<hr className="line-success" />
 										</Col>
 									</Row>
 									<Row>
 										<ListGroup>
-											<ListGroupItem><b>5btc - 15btc </b></ListGroupItem>
-											<ListGroupItem><b>+30% Profits</b> </ListGroupItem>
-											<ListGroupItem><b>24/7 Support</b></ListGroupItem>
-											<ListGroupItem><b>Plan Validity:</b> 365 Days</ListGroupItem>
-                          					<ListGroupItem><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
-                          					<ListGroupItem><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
-                          					<ListGroupItem><b>Referral Commission:</b> 5%</ListGroupItem>
+											<ListGroupItem className="text-success"><b>5btc - 15btc </b></ListGroupItem>
+											<ListGroupItem className="text-success"><b>+30% Profits</b> </ListGroupItem>
+											<ListGroupItem className="text-success"><b>24/7 Support</b></ListGroupItem>
+											<ListGroupItem className="text-success"><b>Plan Validity:</b> 365 Days</ListGroupItem>
+                          					<ListGroupItem className="text-success"><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
+                          					<ListGroupItem className="text-success"><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
+                          					<ListGroupItem className="text-success"><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC</ListGroupItem>
+                          					<ListGroupItem className="text-success"><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC</ListGroupItem>
+                          					<ListGroupItem className="text-success"><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
+                          					<ListGroupItem className="text-success"><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
+                          					<ListGroupItem  className="text-success"><b>Referral Commission:</b> 5%</ListGroupItem>
 										</ListGroup>
 									</Row>
 								</CardBody>
@@ -244,24 +244,24 @@ function Home(props) {
 								<CardBody>
 									<Row>
 										<Col className="text-center" md="12">
-											<h4 className="text-uppercase">Bright Coin</h4>
+											<h4 className="text-uppercase text-info"> <b>Bright Coin </b></h4>
 											<span>Plan</span>
 											<hr className="line-info" />
 										</Col>
 									</Row>
 									<Row>
 										<ListGroup>
-											<ListGroupItem><b> 16btc - 23btc </b></ListGroupItem>
-											<ListGroupItem><b>+50%</b> </ListGroupItem>
-											<ListGroupItem><b>24/7 Support</b></ListGroupItem>
-											<ListGroupItem><b>Plan Validity:</b> 365 Days</ListGroupItem>
-                          					<ListGroupItem><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
-                          					<ListGroupItem><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC/BCH</ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
-                          					<ListGroupItem><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
-                          					<ListGroupItem><b>Referral Commission:</b> 15%</ListGroupItem>
+											<ListGroupItem className="text-info"><b> 16btc - 23btc </b></ListGroupItem>
+											<ListGroupItem className="text-info"><b>+50%</b> </ListGroupItem>
+											<ListGroupItem className="text-info"><b>24/7 Support</b></ListGroupItem>
+											<ListGroupItem className="text-info"><b>Plan Validity:</b> 365 Days</ListGroupItem>
+                          					<ListGroupItem className="text-info"><b>Computer Power Hash Rate:</b> 0.25TH/s</ListGroupItem>
+                          					<ListGroupItem className="text-info"><b>Daily Return:</b>0.4% to 0.8% </ListGroupItem>
+                          					<ListGroupItem className="text-info"><b>Average Annual Return:</b> 0.020075&nbsp;&nbsp;OF BTC</ListGroupItem>
+                          					<ListGroupItem className="text-info"><b>Average Annual Profit:</b> 0.010075&nbsp;&nbsp;OF BTC</ListGroupItem>
+                          					<ListGroupItem className="text-info"><b>Average Annual Return %:</b> 200.75% </ListGroupItem>
+                          					<ListGroupItem className="text-info"><b>Average Annual Profit %:</b> 100.75%</ListGroupItem>
+                          					<ListGroupItem  className="text-info"><b>Referral Commission:</b> 15%</ListGroupItem>
 										</ListGroup>
 									</Row>
 								</CardBody>
