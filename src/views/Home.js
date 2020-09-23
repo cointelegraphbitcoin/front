@@ -39,7 +39,7 @@ function Home(props) {
 					<Col>
 						<h1 className="title text-white"> WE TRADE CRYPTO CURRENCIES. </h1>
 						<h3 className="text-white">
-							We recieve result combining marketing, a creative and industry
+							We receive result combining marketing, a creative and industry
 							experience...
 						</h3>
 						<Button href="/dashboard/investment"> Invest </Button>{" "}
